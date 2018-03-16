@@ -1,4 +1,6 @@
-name: Hank Quinlan, Horrible Cop
+name: Patricia Anne Ilano | Web Developer
 markdown: kramdown
-permalink: /notes/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
+plugins:
+  - jekyll-sitemap
 
