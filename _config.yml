@@ -1,6 +1,26 @@
-name: Patricia Anne Ilano | Web Developer
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+title: Patricia Anne Ilano | Web Developer
+description: >
+     Patricia Anne Ilano personal website, tech blog, and online resume.
+url: "https://ilanpat.github.io"
+baseurl: ""
+logo: ilano<b>pat</b>
+paginate: 5
+paginate_path: "/page:num"
+owner:
+  email: ilanopatdev@gmail.com
+  github:
+    show: true
+    username: ilanopat
+  twitter:
+    show: true
+    username: ilanopat
+  disqus:
+    show: true
+    username: ilanopat
+  linkedin: 
+    show: true
+    username: ilanopat
+permalink: /blog/:title
 plugins:
   - jekyll-sitemap
 

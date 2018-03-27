@@ -1,19 +1,23 @@
-<div class="footer">
+<div class="container container-large">
     <div class="row">
-        <div>
-            <p><small><a href="https://ilanopat.github.io"></a></small></p>
-            <p><small>Find me on:</small></p>
-            <p><small><a href="https://patriciailano.wordpress.com/">WordPress</a></small></p>
-            <p><small><a href="https://github.com/ilanopat/">Github</a></small></p>
-            <p><small><a href="https://twitter.com/ilanopat">Twitter</a></small></p>
-            <p><small><a href="https://www.linkedin.com/in/ilanopat/">Twitter</a></small></p>
-            <p><small><a href="mailto:ilanopat@gmail.com">Email</a></small></p>
+        <div class="col 14 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+                {% if site.owner.github.show == true %}<li><a class="grey-text text-lighten-3" href="https://github.com/{{ site.owner.github.username }}"><i class="fa fa-github">&nbsp;&nbsp;{{ site.owner.github.username }}</i></a></li>{% endif %}
+                {% if site.owner.twitter.show == true %}<li><a class="grey-text text-lighten-3" href="https://twitter.com/{{ site.owner.twitter.username }}"><i class="fa fa-twitter">&nbsp;&nbsp;{{ site.owner.twitter.username }}</i></a></li>{% endif %}
+                {% if site.owner.linkedin.show == true %}<li><a class="grey-text text-lighten-3" href="https://linkedin.com/in/{{ site.owner.linkedin.username }}"><i class="fa fa-twitter">&nbsp;&nbsp;{{ site.owner.linkedin.username }}</i></a></li>{% endif %}
+                {% if site.owner.email %}<li><a class="grey-text text-lighten-3" href="mailto:{{ site.owner.email }}"><i class="fa fa-send"></i>&nbsp;&nbsp;{{ site.owner.email }}</a></li>{% endif %}
+            </ul>
+        </div>
+        <div class="col 16 offset-12 s12 right-align">
+            <h5 class="white-text">{{ site.logo }}</h5>
+            <p class="grey-text text-lighten-4">{{ site.description }}</p>
         </div>
     </div>
     <div class="footer-copyright">
-            <div class="container">
-            © 2018 ilanopat
+        <div class="container center-align">
+            © 2018 ilanopat | Build with jekyll and materialize on Github Pages.
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
+        </div>
+    </div>
 </div>
