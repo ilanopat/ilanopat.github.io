@@ -8,9 +8,12 @@
     <meta property="og:site_name" content="ilanopat.github.com">
     {% if page.title %}
     <meta property="og:title" content="{{page.title}}">
-    <title>{{page.title}}</title>
     {% endif %}
-
+    
+    {% if site.title %}
+    <title>{{site.title}}</title>
+    {% endif %}
+    
     {%if page.description%}
     <meta name="description" content="{{page.description}}">
     <meta name="og:description" content="{{page.description}}">
