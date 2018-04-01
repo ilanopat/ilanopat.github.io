@@ -1,12 +1,6 @@
 <div class="navbar-fixed">
     <nav class="white blue-text z-depth-0">
-        <ul id="slide-out" class="side-nav">
-            <li><a href="/" class="blue-text">{{ site.logo }}</a></li>
-            <li><a href="/blog" class="blue-text">Blog</a></li>
-            <li><a class="blue-text" href="/cv">CV</a></li>
-            <li><a class="blue-text" href="/portfolio">Portfolio</a></li>
-            <li><a class="blue-text" href="/references">References</a></li>
-        </ul>
+        
         <div class="container container-large">
         <a href="/" class="brand-logo blue-text"><span class="light blue-text">{{ site.logo }}</span></a>
         <ul class="right hide-on-med-and down">
@@ -15,7 +9,14 @@
             <li><a href="/portfolio" class="blue-text">Portfolio</a></li>
             <li><a href="/references" class="blue-text">References</a></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse right blue-text"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="button-collapse right blue-text"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="/" class="blue-text">{{ site.logo }}</a></li>
+        <li><a href="/blog" class="blue-text">Blog</a></li>
+        <li><a class="blue-text" href="/cv">CV</a></li>
+        <li><a class="blue-text" href="/portfolio">Portfolio</a></li>
+        <li><a class="blue-text" href="/references">References</a></li>
+    </ul>
 </div>
