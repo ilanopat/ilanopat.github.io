@@ -1,7 +1,10 @@
+source: app
+destination: web
+
 title: Patricia Anne Ilano | Web Developer
 description: >
      Patricia Anne Ilano personal website, tech blog, and online resume.
-url: "https://ilanpat.github.io"
+url: "https://ilanopat.github.io"
 baseurl: ""
 logo: ilano<b>pat</b>
 paginate: 5
