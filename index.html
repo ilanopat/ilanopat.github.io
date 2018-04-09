@@ -17,10 +17,11 @@ description: Main page for ilanopat.github.io.
             <div class="divider"></div>
             <p>You should follow me on: Github, LinkedIn, Twitter, Instagram. And say hi to me at <a href="mailto:me@ilanopat.com">me@ilanopat.com</a></p>
     </div>
+    <h4>Previously posted:</h4>
     {% for post in site.posts limit:5 %}
     <article>
         <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}">
-            <h3>{{post.title}}</h3>
+            <h5>{{post.title}}</h5>
             <p class="float: right;">{{post.date | date: "%B %-d, %Y"}}</p>
         </a>
     </article>
