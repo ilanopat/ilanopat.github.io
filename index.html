@@ -15,15 +15,14 @@ description: Main page for ilanopat.github.io.
             <p style="display:none;">I have a passion on making things work and for them to have their own purpose, to make something useful for the world, a supplement for which it can get what it needs.  </p>
             <p>I'm also looking for opportunity which I can exert my skills and experience, please visit my <a href="/cv">CV</a> section to know my qualification.</p>
             <div class="divider"></div>
-            <p>You should follow me on: Github, LinkedIn, Twitter, Instagram. Subscribe to this blog. And say hi to me at <a href="mailto:me@ilanopat.com">me@ilanopat.com</a></p>
     </div>
     <h5>Previously posted:</h5>
     {% for post in site.posts limit:5 %}
-    <div class="container">
-        <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}">
+    <div class="content">
+        <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}" style="display: block;overflow: hidden;padding: 6px 20px;border-top: solid 1px #eef3fa;">
             <span class="date" style="float: left;">{{post.date | date: "%B %-d, %Y"}}</span>
             <span class="title" >{{post.title}}</span>
-            <strong class"tag" style="float: right;"></strong>
+            <strong class"tag" style="float: right;">{{post.tag}}</strong>
         </a>
     </div>
     {%endfor%}
