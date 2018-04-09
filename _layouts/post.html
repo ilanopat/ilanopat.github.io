@@ -15,18 +15,18 @@ blog: active
             {{ content }}
         </section>
     </article>
-        <section class="post-sharing"> 
+        <div class="post-sharing"> 
             {% include sharing.html %}
-        </section>
+        </div>
         <hr>
-        <section class="post-author">
+        <div class="post-author">
             <img class="responsive-img" alt="Patricia Anne Ilano" src="https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=200&amp;h=200">
             <p>{{site.name}}</p>
             <p>{{site.description}}</p>
-        </section>
+        </div>
         <hr>
-        <section class="post-comments">
+        <div class="post-comments">
             {% include disqus.html %}
-        </section>
+        </div>
     
 </div>
