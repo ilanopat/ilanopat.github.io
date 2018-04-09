@@ -13,9 +13,10 @@ description: Blog
             {% for post in site.posts %}
             <div class="content">
                 <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}" style="display: block;overflow: hidden;padding: 6px 20px;border-top: solid 1px #eef3fa;">
-                    <span class="date" style="float: left;width:100px;">{{post.date | date: "%B %-d, %Y"}}</span>
-                    <span class="title" >{{post.title}}</span>
-                    <strong class"tag" style="float: right;">{{post.tag}}</strong>
+                    <span class="date hide-on-small-only" style="float: right;position:relative;">{{post.date | date: "%B %-d"}}</span>
+                    {{post.title}}
+                    <h5 style="width: 400px;color:#aaa;">{{post.subtitle}}</h5>
+                    <strong class"tag chip" style="float: left;margin-top:10px;">{{post.tag}}</strong>
                 </a>
             </div>
             {%endfor%}

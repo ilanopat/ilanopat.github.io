@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Setting up my Github Page"
+subtitle: "Your site on Github? Really?"
 date: 2018-03-16
 tag: development
 ---
