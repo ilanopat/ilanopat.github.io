@@ -3,19 +3,23 @@ layout: default
 blog: active
 ---
 
-<div class="post-list">
+<div class="container">
     <article class="post-item">
         <section class="post-headline">
-            <h1 class="post-title">{{page.title}}</h1>
-            <h2 class="date"><info datetime="{{page.date}}">
+            <h4 class="post-title">{{page.title}}</h4>
+            <h5 class="date"><info datetime="{{page.date}}">
                 {{page.date | date_to_string}} {% if page.author %} by {{ page.author }} {% endif%}
-        </info></h2>
+        </info></h5>
         </section>
         <section class="post-content">
             {{ content }}
         </section>
     </article>
-        
+        <section class="post-author">
+            <img class="circle responsive-img" alt="Patricia Anne Ilano" src="https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=200&amp;h=200">
+            <p>{{site.owner}}</p>
+            <p>{{site.description}}</p>
+        </section>
         
         <div class="blogcomments">
             {% include disqus.html %}

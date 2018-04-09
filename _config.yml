@@ -3,14 +3,14 @@ destination: web
 
 title: Patricia Anne Ilano | Web Developer
 description: >
-     Patricia Anne Ilano personal website, tech blog, and online resume.
+    Web Developer from Manila.
 url: "https://ilanopat.github.io"
 baseurl: ""
 photo_url: "https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=260&h=260"
 logo: ilano<b>pat</b>
 paginate: 5
 paginate_path: "/page:num"
-owner:
+owner: Patricia Anne Ilano
   email: ilanopatdev@gmail.com
   github:
     show: true

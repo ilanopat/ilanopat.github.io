@@ -8,13 +8,15 @@ portfolio: passive
 references: passive
 description: Blog
 ---
-        <div class="container">
-            <h4>Blog</h4>
+        <div class="container" style="max-width:55%">
+            <center><h4>Blog</h4></center>
             {% for post in site.posts %}
-    <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}">
-            <span class="date" style="float: left;">{{post.date | date: "%B %-d, %Y"}}</span>
-            <span class="title" >{{post.title}}</span>
-            <strong class"tag" style="float: right;"></strong>
-        </a>
-    {% endfor %}
+            <div class="content">
+                <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}" style="display: block;overflow: hidden;padding: 6px 20px;border-top: solid 1px #eef3fa;">
+                    <span class="date" style="float: left;width:100px;">{{post.date | date: "%B %-d, %Y"}}</span>
+                    <span class="title" >{{post.title}}</span>
+                    <strong class"tag" style="float: right;">{{post.tag}}</strong>
+                </a>
+            </div>
+            {%endfor%}
         </div>
