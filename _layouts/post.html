@@ -6,19 +6,22 @@ blog: active
 <div class="container">
     <article class="post-item">
         <section class="post-headline">
-            <h4 class="post-title">{{page.title}}</h4>
+            <center><h4 class="post-title">{{page.title}}</h4>
             <h5 class="date"><info datetime="{{page.date}}">
                 {{page.date | date_to_string}} {% if page.author %} by {{ page.author }} {% endif%}
         </info></h5>
+    </center>
         </section>
         <section class="post-content">
             {{ content }}
         </section>
     </article>
+    <hr>
         <section class="post-author">
             <img class="circle responsive-img" alt="Patricia Anne Ilano" src="https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=200&amp;h=200">
-            <p>{{site.owner}}</p>
+            <p>{{site.name}}</p>
             <p>{{site.description}}</p>
+            {{% include sharing.html %}}
         </section>
         
         <div class="blogcomments">
