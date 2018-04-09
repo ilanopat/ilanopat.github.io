@@ -17,14 +17,5 @@ description: Main page for ilanopat.github.io.
             <div class="divider"></div>
             <p>You should follow me on: Github, LinkedIn, Twitter, Instagram. Subscribe to this blog. And say hi to me at <a href="mailto:me@ilanopat.com">me@ilanopat.com</a></p>
     </div>
-    <div class="container">
-    <h5>Previously posted:</h5>
-    {% for post in site.posts limit:5 %}
-        <a href="{{post.url | prepend: site.baseurl }}">
-            <span class="date" style="float: left;">{{post.date | date: "%B %-d, %Y"}}</span>
-            <span class="title" >{{post.title}}</span>
-            <strong class"tag" style="float: right;"></strong>
-        </a>
-    {%endfor%}
-</div>
+    
 </div>
