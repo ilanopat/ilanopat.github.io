@@ -11,7 +11,6 @@ logo: ilano<b>pat</b>
 paginate: 5
 paginate_path: "/page:num"
 owner:
-  name: Patricia Anne Ilano
   email: ilanopatdev@gmail.com
   github:
     show: true
