@@ -17,15 +17,20 @@ blog: active
         </section>
     </article>
     <hr>
-        <section class="post-author">
-            <img class="circle responsive-img" alt="Patricia Anne Ilano" src="https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=200&amp;h=200">
-            <p>{{site.name}}</p>
-            <p>{{site.description}}</p>
+        <section class="post-author" style="font-size: 13px;font-weight: bold;line-height: 1.4;border-top: 1px solid #eee;padding-top: 40px;margin-bottom: 40px;padding-bottom: 40px;margin-top: 40px;color: #444;border-bottom: 1px solid #eee;">
+            <a href="/">
+            <img style="height: 70px;width: 70px;float: left;border-radius: 50%;margin-top: 3px;margin-right: 20px;box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;" class="circle responsive-img" alt="Patricia Anne Ilano" src="https://patriciailano.files.wordpress.com/2017/10/rnqpuaql_400x400.jpg?w=200&amp;h=200">
+            <div>
+            <span style="display:block;">{{site.name}}</span>
+            <span style="display:block;">{{site.description}}</span>
+        </div>
+        </a>
+    </section>
+        <section class="post-sharing" style="float:right;">
             {% include sharing.html %}
         </section>
-        
         <div class="blogcomments">
             {% include disqus.html %}
         </div>
+    </div>
     
-</div>
