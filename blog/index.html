@@ -8,6 +8,13 @@ portfolio: passive
 references: passive
 description: Blog
 ---
-        <div class="blog">
-            {%include post-list.html%}
+        <div class="container">
+            <h4>Blog</h4>
+            {% for post in site.posts %}
+    <a class="waves-effect" href="{{post.url | prepend: site.baseurl }}">
+            <span class="date" style="float: left;">{{post.date | date: "%B %-d, %Y"}}</span>
+            <span class="title" >{{post.title}}</span>
+            <strong class"tag" style="float: right;"></strong>
+        </a>
+    {% endfor %}
         </div>
