@@ -37,3 +37,8 @@ ul.posts{
 ul.posts li{
     list-style: none;
 }
+
+.current {
+    border-bottom: 1px solid #ccc!important;
+    background-color: rgba(0,0,0,0.1);
+}
