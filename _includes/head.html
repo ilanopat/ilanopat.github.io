@@ -10,6 +10,10 @@
     <meta property="og:title" content="{{page.title}}">
     {% endif %}
 
+    {% if site.title %}
+    <title>{{site.title}}</title>
+    {% endif %}
+    
     {%if page.description%}
     <meta name="description" content="{{page.description}}">
     <meta name="og:description" content="{{page.description}}">
@@ -27,6 +31,5 @@
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{{page.date | date: "%Y-%m-%d"}}">
     {% endif %}
-
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+

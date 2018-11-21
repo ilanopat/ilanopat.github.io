@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>{% include head.html %}</head>
-
 <body>
     <header>
         {% include header.html %}
@@ -10,7 +9,14 @@
         {{ content }}
         
     </main>
-    <footer class="page-footer no-margin __top blue">
+    <footer class="site-footer" style="margin: 0 auto;
+    padding: 48px 0;
+    width: 100%;
+    max-width: 640px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    line-height: 17.6px;">
         {% include footer.html %}
     </footer>
     {% include scripts.html %}
