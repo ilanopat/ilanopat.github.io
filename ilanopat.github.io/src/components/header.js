@@ -1,35 +1,38 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import {useTheme} from './ThemeProvider';
+import {Button, Grid, Typography} from '@material-ui/core';
+import Sun from './icons/Sun';
+import Moon from './icons/Moon';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+const Header = ({ siteTitle }) => {
+  
+  const { themeMode, handleThemeChange } = useTheme();
+
+  return(
+    <>
+    <Grid
       style={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Typography variant="h3">{siteTitle}</Typography>
         </Link>
-      </h1>
-    </div>
-  </header>
-)
+        <Button size="small" onClick={handleThemeChange}>
+          {themeMode==='light'?(<Moon width={30} />):<Sun width={30}/> }
+        </Button>
+    </Grid>
+    </>)
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -38,5 +41,6 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
+
 
 export default Header
