@@ -6,8 +6,6 @@ import {Button, Grid, Typography} from '@material-ui/core';
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
-
-
 const Header = ({ siteTitle }) => {
   
   const { themeMode, handleThemeChange } = useTheme();
@@ -30,7 +28,7 @@ const Header = ({ siteTitle }) => {
           <Typography variant="h3">{siteTitle}</Typography>
         </Link>
         <Button size="small" onClick={handleThemeChange}>
-          {localStorage.getItem('theme')==='light'?(<Moon width={30} />):<Sun width={30}/> }
+          {themeMode==='light'?(<Moon width={30} />):<Sun width={30}/> }
         </Button>
     </Grid>
     </>)
