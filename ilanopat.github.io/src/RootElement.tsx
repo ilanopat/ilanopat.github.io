@@ -1,12 +1,12 @@
 import React from 'react';
-import {ThemeProvider} from '@material-ui/core';
-import {theme} from './theme';
+import Provider from './components/ThemeProvider';
 
 const RootElement = ({element})=>{
-    <ThemeProvider theme={theme}>
-        hello
+    return (
+    <Provider>
         {element}
-    </ThemeProvider>
+    </Provider>
+    );
 };
 
 export default RootElement;
