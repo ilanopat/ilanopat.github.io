@@ -1,13 +1,11 @@
 import React, { useEffect }  from 'react';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
-import Layout from './layout';
+import { createMuiTheme, ThemeProvider, CssBaseline } from '@material-ui/core';
 
 const ThemeContext = React.createContext();
 
 const Provider = ({children})=>{
-    const [themeMode, setThemeMode] =React.useState('light');
-    const [componentMounted, setComponentMounted] = React.useState(false);
-
+    const [themeMode, setThemeMode] = React.useState('light');
+    
     const setMode = mode => {
         localStorage.setItem('theme', mode)
         setThemeMode(mode)
@@ -20,7 +18,6 @@ const Provider = ({children})=>{
         } else {
             setMode('light')
         }
-        setComponentMounted(true);
     }, []);
     
     const handleThemeChange =()=>{
@@ -39,9 +36,10 @@ const Provider = ({children})=>{
     });
         
     return (
-        <ThemeContext.Provider value={{themeMode, componentMounted,handleThemeChange}}>
+        <ThemeContext.Provider value={{themeMode, handleThemeChange}}>
             <ThemeProvider theme={theme}>
-                <Layout>{children}</Layout>
+            <CssBaseline/>
+                {children}
             </ThemeProvider>
         </ThemeContext.Provider>
     );

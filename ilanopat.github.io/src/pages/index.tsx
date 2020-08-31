@@ -1,10 +1,11 @@
 import React from "react"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import { Typography, Paper, Grid } from "@material-ui/core"
+import { Typography, Paper, Grid, ThemeProvider } from "@material-ui/core"
+import Layout from "../components/layout"
 
-const IndexPage = () => (
-  <Paper style={{height:"100vh"}}>
+const IndexPage = () => {
+return (
+  <Layout>
     <SEO title="Home" />
     <Grid container direction="column">
       <Grid item>
@@ -17,7 +18,7 @@ const IndexPage = () => (
         <Typography variant="body1">Now go build something great.</Typography>
       </Grid>
     </Grid>
-  </Paper>
-)
+  </Layout>
+)}
 
 export default IndexPage
