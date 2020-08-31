@@ -11,27 +11,34 @@ const Header = ({ siteTitle }) => {
   const { themeMode, handleThemeChange } = useTheme();
 
   return(
-    <>
     <Grid
+    container
       style={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-          }}
-        >
-          <Typography variant="h3">{siteTitle}</Typography>
-        </Link>
+      <Grid item>
+        <Typography variant="h3">
+          <Link
+            to="/"
+            style={{
+              color: themeMode === 'light'? 'black':'white',
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </Typography>
+      </Grid>
+      <Grid item>
         <Button size="small" onClick={handleThemeChange}>
           {themeMode==='light'?(<Moon width={30} />):<Sun width={30}/> }
         </Button>
+      </Grid>
     </Grid>
-    </>)
+    )
 }
 
 Header.propTypes = {
