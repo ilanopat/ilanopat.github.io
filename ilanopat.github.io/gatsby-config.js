@@ -5,7 +5,7 @@ module.exports = {
     description:
       'Patricia Anne Ilano is a full stack software engineer who specializes in web and software applications.',
     author: 'Patricia Anne Ilano',
-    siteUrl: 'https://ilanopat.com',
+    siteUrl: 'https://ilanopat.github.io',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
