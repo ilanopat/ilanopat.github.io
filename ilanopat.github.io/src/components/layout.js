@@ -46,24 +46,24 @@ const Layout = ({ children }) => {
       alignItems: 'center',
       fontFamily:'avenir',
     }}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <Nav menu={menu}/>
-      <Grid item>
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      {/* <Nav menu={menu}/> */}
+      {/* <Grid item>
         <Button size="small" onClick={handleThemeChange}>
           {themeMode==='light'?(<Moon width={30} />):<Sun width={30}/> }
         </Button>
-      </Grid>
+      </Grid> */}
 
       <Grid item
         style={{
-          margin: `0 auto`,
+          margin: `50px auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
       </Grid>
-      <Footer/>
+      {/* <Footer/> */}
     </Grid>
   )
 }

@@ -1,14 +1,14 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import { Paper } from "@material-ui/core"
+import Layout from "../components/layout"
 
 const NotFoundPage = () => (
-    <Paper>
+    <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Paper>
+    <h1>BAMBOOZLED</h1>
+    <p>Such Wow. That Sad. Melp.</p>
+    </Layout>
 )
 
 export default NotFoundPage
