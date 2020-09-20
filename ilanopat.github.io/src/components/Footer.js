@@ -20,7 +20,11 @@ export default function Footer() {
   const { themeMode } = useTheme();
 
     return (
-    <Grid style={{gridArea:'footer'}}>
+    <Grid style={{gridArea:'footer',
+      margin: `0 auto`,
+      maxWidth: 960,
+      padding: `0 1.0875rem 1.45rem`,
+    }}>
       {links.map(({ href, icon: Icon, title }) => (
         <OutboundLink
           css={{
